@@ -16,9 +16,9 @@ import { BiLayout } from "react-icons/bi";
 const frontend = [
   { name: "React", icon: <FaReact /> },
   { name: "Next.js", icon: <RiNextjsLine /> },
+  { name: "HTML/CSS", icon: <FaHtml5 /> },
   { name: "JavaScript", icon: <IoLogoJavascript /> },
   { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "HTML/CSS", icon: <FaHtml5 /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
 ];
 
@@ -41,20 +41,19 @@ const SkillSection = ({ title, skills }) => (
     <h2 className="text-base sm:text-lg font-semibold text-[#8000FF] mb-4">
       {title}
     </h2>
-
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3">
       {skills.map((tech) => (
         <div
           key={tech.name}
           className="
-            flex items-center space-x-2 
+            flex items-center
             border border-gray-600 
-            rounded-md px-3 py-2 
+            rounded-md px-2 sm:px-3 py-2 space-x-2
             text-sm font-medium text-white 
             bg-gradient-to-r from-[#8000FF] to-[#FF8660]  
           "
         >
-          <div className="text-gray-300 text-lg">{tech.icon}</div>
+          <div className="text-gray-300 text-sm sm:text-lg">{tech.icon}</div>
           <span>{tech.name}</span>
         </div>
       ))}

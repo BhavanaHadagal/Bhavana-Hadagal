@@ -39,7 +39,6 @@ const Projects = () => {
       <h2 className="font-extrabold text-3xl bg-gradient-to-b from-[#FF8660] to-[#D5491D] bg-clip-text text-transparent text-center">
         PROJECTS
       </h2>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto mt-10">
         {projects.map((project, idx) => (
           <div
@@ -51,10 +50,8 @@ const Projects = () => {
               alt={project.title}
               className="w-full h-48 object-cover"
             />
-
             <div className="p-5 flex justify-between items-center bg-[#2A2A2A] text-gray-300">
               <h3 className="text-base font-semibold">{project.title}</h3>
-
               <div className="flex gap-3">
                 <a
                   href={project.demo}
@@ -65,7 +62,6 @@ const Projects = () => {
                   <CiGlobe size={18} />
                   <span>Visit</span>
                 </a>
-
                 <a
                   href={project.code}
                   target="_blank"
