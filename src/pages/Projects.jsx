@@ -29,7 +29,7 @@ const projects = [
     title: "PORTFOLIO",
     image: portfolio,
     code: "#",
-    demo: "#",
+    demo: "https://github.com/BhavanaHadagal/New-Portfolio",
   },
 ];
 
