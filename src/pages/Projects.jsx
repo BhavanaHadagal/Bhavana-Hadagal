@@ -28,8 +28,8 @@ const projects = [
   {
     title: "PORTFOLIO",
     image: portfolio,
-    code: "#",
-    demo: "https://github.com/BhavanaHadagal/New-Portfolio",
+    code: "https://github.com/BhavanaHadagal/Bhavana-Hadagal",
+    demo: "#",
   },
 ];
 
