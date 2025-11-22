@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "../assets/photo.png";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/bhavana-resume.pdf";
 import Skills from "../components/Skills";
 
 const Home = () => {
