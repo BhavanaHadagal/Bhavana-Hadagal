@@ -2,7 +2,7 @@ import React from "react";
 import ecommerce from "../assets/e-commerce.png";
 import lms from "../assets/lms.png";
 import calendar from "../assets/calendar.png";
-import portfolio from "../assets/portfolio.png"
+import todo from "../assets/todo.png"
 import { FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 
@@ -26,10 +26,10 @@ const projects = [
     demo: "https://calendar-liard.vercel.app/",
   },
   {
-    title: "PORTFOLIO",
-    image: portfolio,
-    code: "https://github.com/BhavanaHadagal/Bhavana-Hadagal",
-    demo: "#",
+    title: "TODO-LIST",
+    image: todo,
+    code: "https://github.com/BhavanaHadagal/Todo-app",
+    demo: "https://todo-list-lovat-omega-69.vercel.app/",
   },
 ];
 
@@ -51,7 +51,7 @@ const Projects = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-5 flex justify-between items-center bg-[#2A2A2A] text-gray-300">
-              <h3 className="text-base font-semibold">{project.title}</h3>
+              <h3 className="text-sm sm:text-base font-semibold">{project.title}</h3>
               <div className="flex gap-3">
                 <a
                   href={project.demo}
