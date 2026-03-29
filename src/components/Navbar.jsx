@@ -9,10 +9,10 @@ const Navbar = () => {
           Portfolio
         </div>
         <ul className="hidden md:flex space-x-12 text-base text-white font-semibold hover:text-gray-300">
-          <a href="home">Home</a>
-          <a href="projects">Projects</a>
-          <a href="experience">Experience</a>
-          <a href="contact">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </ul>
       </div>
     </nav>
