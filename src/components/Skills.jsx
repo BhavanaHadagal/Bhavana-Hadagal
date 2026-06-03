@@ -37,23 +37,17 @@ const tools = [
 
 
 const SkillSection = ({ title, skills }) => (
-  <div className="mb-10 border border-gray-600 p-4 rounded-xl px-6">
-    <h2 className="text-base sm:text-lg font-semibold text-[#8000FF] mb-4">
+  <div className="mb-5 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 hover:border-[#FF8660]/25 transition-colors duration-300">
+    <h2 className="text-xs font-semibold uppercase tracking-widest text-[#FF8660] mb-4">
       {title}
     </h2>
     <div className="flex flex-wrap gap-2 sm:gap-3">
       {skills.map((tech) => (
         <div
           key={tech.name}
-          className="
-            flex items-center
-            border border-gray-600 
-            rounded-md px-2 sm:px-3 py-2 space-x-2
-            text-sm font-medium text-white 
-            bg-gradient-to-r from-[#8000FF] to-[#FF8660]  
-          "
+          className="flex items-center gap-2 border border-white/10 rounded-lg px-3 py-2 text-sm font-medium text-gray-300 bg-white/5 hover:border-[#FF8660]/40 hover:text-white transition-all duration-200"
         >
-          <div className="text-gray-300 text-sm sm:text-lg">{tech.icon}</div>
+          <span className="text-base text-[#FF8660]">{tech.icon}</span>
           <span>{tech.name}</span>
         </div>
       ))}
@@ -63,10 +57,10 @@ const SkillSection = ({ title, skills }) => (
 
 const Skills = () => {
   return (
-    <section className="pt-8 px-6">
+    <section className="pt-8 px-6 pb-4">
       <SkillSection title="Frontend" skills={frontend} />
       <SkillSection title="Backend" skills={backend} />
-      <SkillSection title="Tools" skills={tools} />
+      <SkillSection title="Tools & Databases" skills={tools} />
     </section>
   );
 };

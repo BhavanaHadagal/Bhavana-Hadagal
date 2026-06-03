@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -11,19 +10,19 @@ const App = () => {
     <div className="bg-black min-h-screen">
       <Navbar />
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-hidden no-scrollbar">
-        <section id="home">
+        <section id="home" className="snap-start">
           <Home />
         </section>
 
-        <section id="projects">
+        <section id="projects" className="snap-start">
           <Projects />
         </section>
 
-        <section id="experience">
+        <section id="experience" className="snap-start">
           <Experience />
         </section>
 
-        <section id="contact">
+        <section id="contact" className="snap-start">
           <Contact />
         </section>
       </div>
